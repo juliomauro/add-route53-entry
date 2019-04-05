@@ -1,7 +1,8 @@
 # Criar entradas no route 53 via Terraform
 ### Pré-requisitos
-- aws cli instalado e configurado ```aws configure```
-- terraform - https://www.terraform.io/downloads.html
+- aws cli instalado ```pip install awscli --upgrade --user``` 
+- aws cli configurado ```aws configure```
+- terraform baiado - https://www.terraform.io/downloads.html
 - ID da ZONA a ser alterada
 ```
 aws route53 list-hosted-zones-by-name |  jq --arg name "DOMINIO." -r '.HostedZones | .[] | select(.Name=="\($name)") | .Id'
