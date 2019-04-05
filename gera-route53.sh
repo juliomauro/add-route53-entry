@@ -12,7 +12,7 @@ echo "resource \"aws_route53_record\" \"$NAME-A\" {
     records = [\"$IPADDR\"]
     ttl     = \"60\"
 
-}" >> entradas-$DOMAIN.tf
+}" >> entradas-route53-$DOMAIN.tf
 
 done < $INPUT
 IFS=$OLDIFS
