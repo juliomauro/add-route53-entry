@@ -23,7 +23,8 @@ onde:
 `
 Para entradas com mais de um IP utilize a seguinte sintexe no arquivo
 
-entrada-X,domonio.com,192.168.1.2**\"\**, **"**192.168.1.3,A,ABC123456
+`entrada-X,domonio.com,192.168.1.2\"\, "192.168.1.3,A,ABC123456
+`
 
 ### Execução
 #### gera-route53.sh
